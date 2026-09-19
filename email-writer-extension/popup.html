@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 350px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    select, button {
+      margin-top: 10px;
+      padding: 8px;
+    }
+    button {
+      cursor: pointer;
+      width: 100%;
+    }
+    #result {
+      margin-top: 15px;
+      white-space: pre-wrap;
+      font-size: 13px;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>AI Email Reply</h3>
+  <label>Paste email content:</label>
+  <textarea id="emailContent" rows="5"></textarea>
+
+  <label>Tone:</label>
+  <br>
+  <select id="tone">
+    <option value="formal">Formal</option>
+    <option value="friendly">Friendly</option>
+    <option value="casual">Casual</option>
+  </select>
+
+  <button id="generateBtn">Generate Reply</button>
+
+  <div id="result"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
